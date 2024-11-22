@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Advanced Search</title>
     <style>
-         body {
+        body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -42,6 +41,7 @@
             font-size: 16px;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
             outline: none;
+            margin-bottom: 10px;
         }
 
         input[type="submit"] {
@@ -57,30 +57,34 @@
         }
 
         input[type="submit"]:hover {
-            background-color: #1558c7; }
-        
+            background-color: #1558c7;
+        }
+
         h1{
             font-size: 48px;
             color: black;
             margin-bottom: 20px;  }
-    
-       
+
     </style>
-   
 </head>
 <body>
-    <h1>Google Image</h1>
+    <h1>Google Advance Search</h1>
+    
     <div class="links">
         <a href="index.html">Back to Search</a>
     </div>
-
     <form action="https://www.google.com/search" method="get">
-        <input type="text" name="q" placeholder="Search Images" required>
-        <input type="hidden" name="tbm" value="isch">
+        <input type="text" name="as_q" placeholder="Search for keywords" required>
         <br>
-        <input type="submit" value="Image Search">
+        <input type="text" name="as_epq" placeholder="All these word">
+        <br>
+        <input type="text" name="as_oq" placeholder="this exact word or phrase">
+        <br>
+        <input type="text" name="as_eq" placeholder="any of these words">
+        <br>
+        <input type="text" name="as_sitesearch" placeholder="none of these words">
+        <br>
+        <input type="submit" value="Advanced Search">
     </form>
-    
-
 </body>
 </html>
